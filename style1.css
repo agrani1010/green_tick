@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700;900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html{
+	scroll-behavior: smooth;
+}
+body
+{
+	margin:0;
+	font-family: 'Kreon', serif;
+}
+*{
+	box-sizing: border-box;
+	margin:0;
+	
+}
+.container{
+	max-width:1140px;
+	margin:auto;
+}
+.row{
+	display:flex;
+	flex-wrap: wrap;
+}
+/*header*/
+.header{
+	position:absolute;
+	left:0px;
+	right:0px;
+	border-bottom: 0px solid #000000;
+    padding:0px 0px;
+    z-index: 11;
+   background-color: transparent;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+  background-color:#000000;
+  color: #000000;
+  background: #000000;
+}
+.sticky + .content {
+  padding-top: 102px;
+ background-color: #000000;
+}
+.header .row{
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .navbar ul{
+
+	list-style: inline;
+	padding: 0;
+	margin:0;
+}
+.header .navbar ul img{
+	margin-left: 0px;
+	margin-right: 250px;
+}
+.header .navbar ul li{
+    
+	display: inline;
+	margin-left: 10px;
+	margin-top:0px;
+	
+    text-align: right;
+    background-position: 100%;
+    padding-right: 0;
+	
+}
+.header .navbar ul li a{
+	font-size: 30px;
+	text-decoration: none;
+		line-height:72px;
+		padding: 5px 10px;
+	color: #79ff4d;
+	display:inline;
+	font-weight:500;
+	position: relative;
+
+}
+.header.sticky .navbar ul li a{
+color:#ffffff;
+
+}
+.header .navbar ul li a::before{
+	content:'';
+	height:3px;
+	background-color: #ffffff;
+	width:0%;
+	position:absolute;
+	left:0px;
+	bottom:-1px;
+	transition: all .5s ease;
+}
+.header.sticky .navbar ul li a::before{
+	background-color: #ffffff;
+}
+.header .navbar ul li a:hover::before{
+	width: 100%;
+	left:0;
+}
+.header .navbar a.icon{
+   color:white;
+   display: block;
+   margin-left:38px;
+   top:25px;
+   position: absolute;
+}
+.active{
+	margin-left:0px;
+}
+/*home*/
+.home{
+	min-height: 90vh;
+	background-image:url("https://github.com/agrani1010/images/raw/master/bggt.jpg");
+	background-size:cover;
+	background-position: center;
+	padding:15px;
+	background-repeat: no-repeat;
+}
+.home .full-screen{
+	min-height: 100vh;
+
+}
+.home .home-content{
+	flex:0 0 100%;
+	max-width:100%;
+	display:flex;
+	flex-wrap;
+	align-items:center;
+	background-color: transparent;
+}
+.home .home-content .block{
+flex:0 0 75;
+max-width:75%;
+padding-left:35px;
+background-color: transparent;
+}
+.home .home-content .block h4{
+color:#ffffff;
+font-size:30px;
+font-weight:500;
+margin:0;
+padding:0;
+background-color: transparent;
+
+}
+.home .home-content .block h1{
+color:#79ff4d;
+font-size:70px;
+font-weight:700;
+margin:0;
+padding:0;
+background-color: transparent;
+}
+.home .home-content .block h3{
+color:#ffffff;
+font-size:45px;
+font-weight:600;
+margin:0;
+padding:0;
+background-color: transparent;
+}
+
+.vision{
+	padding:70px 15px;
+	box-sizing: border-box;
+	margin:0;
+	background-color: #000000;
+
+}
+.vision .container{
+	background-color: #000000;
+}
+.vision .section-title{
+	flex:0 0 100%;
+	max-width: 100%;
+	margin-bottom:35px;
+}
+.vision .section-title h1{
+	display:inline-block;
+	font-size:40px;
+	text-transform: uppercase;
+	font-weight:700px;
+	color:#79ff4d;
+	margin:0 0 10px;
+	position: relative;
+	padding-bottom:5px;
+}
+.vision .section-title h1:before{
+content:'';
+left:0;
+position:absolute;
+height:2px;
+right:0px;
+background-color: #ffffff;
+bottom:0px;
+}
+
+
+.vision .vision-content .text{
+	flex:0 0 100%;
+	max-width: 100%;
+	padding-left: 30px;
+}
+.vision .vision-content .text h3{
+   font-size:25px;
+   font-weight: 400;
+   margin: 0 0 5px;
+   color:#ffffff;
+}
+.vision .vision-content .text h5{
+   font-size:18px;
+   font-weight: 400;
+   margin: 0 0 20px;
+   color:#ffffff;
+
+}
